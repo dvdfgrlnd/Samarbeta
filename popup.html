@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+    <title>Getting Started Extension's Popup</title>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <p id="status">Not connected</p>
+        <div id="userForm">
+            <input type="text" id="username" placeholder="username" value="david"></input>
+            <input type="text" id="sessionKey" placeholder="session key" value=""></input>
+            <button id="createButton" class="button">create new</button>
+            <button id="connectButton" class="button">connect</button>
+            <button id="disconnectButton" class="button">disconnect</button>
+        </div>
+    </div>
+    <script src="JoinMessage.js"></script>
+    <script src="MessageProtocol.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body, html{
+    width: 600px;
+}
+
+body {
+    font-family: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+    font-size: 100%;
+}
+
+#container {
+    width: 60%;
+}
+
+#status {
+    font-size: 20px;
+    color: #555555;
+    text-overflow: ellipsis;
+}
+
+input {
+    display: inline;
+    color: #555555;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.button {
+    margin: 5px;
+    display: inline;
+    border-radius: 6px;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 10px 22px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#connectButton{
+    background: lightgray;
+    display: inline;
+}
+
+#disconnectButton{
+    background: darkred;
+    display: none;
+}
+
+#createButton{
+    background: limegreen;
+}

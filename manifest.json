@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Samarbeta",
+  "author": "davidfagerlund",
+  "description": "This extension enables collaboration between users by sharing browser information",
+  "version": "1.0",
+  "background": {
+    "scripts": [
+      "Models/JoinMessage.js",
+      "Models/MessageProtocol.js",
+      "WindowHandlers/TabHandler.js",
+      "WindowHandlers/URLHandler.js",
+      "HandlerTypes/ActionHandler.js",
+      "HandlerTypes/ContentHandler.js",
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://localhost:3000/",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
